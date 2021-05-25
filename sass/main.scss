@@ -1,0 +1,586 @@
+@import 'setup';
+
+.everything
+{
+
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    grid-template-rows: 0.2fr 0.8fr 0.3fr 1fr 1fr 1fr 0.7fr;
+    //grid-gap: 1vw;
+    grid-template-areas: 
+        "head head"
+        "cont1 cont2"
+        "cont3 cont3"
+        "sec sec"
+        "cont6 cont6"
+        "faq faq"
+        "foot foot";
+
+    header
+    {
+        grid-area: head;
+        height: 20vh;
+
+        display: flex;
+        justify-content: space-between;
+
+        margin: 30px 70px 0px 60px;
+
+        .logo
+        {
+            margin-top: 20px;
+        }
+
+        nav 
+        {
+            ul
+            {
+                display: flex;
+                justify-content: space-between;
+
+                li 
+                {
+                    margin: 25px;
+                    text-transform: uppercase;
+                    a 
+                    {
+                        font-size: 0.8rem;
+                        color: $VeryDarkBlue;
+
+                        &:hover 
+                        {
+                            color: $SoftRed;
+                        }
+                    }
+
+                    .login
+                    {
+                        color: white;
+
+                        &:hover 
+                        {
+                            color: $SoftRed;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .cont1 
+    {
+        grid-area: cont1;
+        max-height: 85vh;
+        padding: 100px 60px 0px 60px;
+
+        p 
+        {
+            margin: 10px;
+        }
+
+        .buttons 
+        {
+            position: relative;
+            top: 0;
+            margin-top: 60px;
+        }
+    }
+
+    .cont2 
+    {
+        grid-area: cont2;
+        height: 85vh;
+
+        img 
+        {
+            position: relative;
+            z-index: 10;
+        }
+
+        .object
+        {
+            background-color: $SoftBlue;
+            height: 50vh;
+            width: 100%;
+
+            position: relative;
+            top: -40vh;
+            left: 30%;
+
+            border-radius: 0 0 0 200px;
+
+            z-index: 0;
+        }
+    }
+
+    .cont3
+    {
+        grid-area: cont3;
+        height: 30vh;
+
+        text-align: center;
+        margin-bottom: 30px;
+
+        p 
+        {
+            width: 40%;
+            align-items: center;
+            margin: 30px auto;
+            line-height: 1.5rem;
+        }
+    }
+
+    section 
+    {
+        grid-area: sec;
+        max-height: 100vh;
+        max-width: 100vw;
+
+        .linksNav
+        {
+            ul 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                border-bottom: solid 1px #b8b8b8;
+                margin: 0 auto;
+                margin-bottom: 30px;
+
+                .active 
+                {
+                    color: $VeryDarkBlue;
+                    border-bottom: solid 5px $SoftRed;
+                }
+
+                li 
+                {
+                    text-align: center;
+                    margin: 0 50px;
+                    padding: 0 15px;
+                    padding-bottom: 20px;
+                    color: $GrayishBlue;
+                    border-bottom: solid 5px transparent;
+                    transition: 0.3s ease-in-out;
+
+                    &:nth-child(1), &:nth-child(3)
+                    {
+                        margin: 0;
+                    }
+
+                    &:hover
+                    {
+                        color: $SoftRed;
+                    }
+                   
+                }
+            }
+            
+        }
+
+        .linkDiv3, .linkDiv2
+        {
+            display: none !important;
+        }
+
+        .linkDiv1
+        {
+            display: flex;
+            justify-content: space-around;
+
+            .cont4
+            {
+                max-width: 50vw;
+                margin-top: 100px;
+
+                img 
+                {
+                    position: relative;
+                    left: 200px;
+                    z-index: 10;
+                }
+
+                .object
+                {
+                    background-color: $SoftBlue;
+                    height: 50vh;
+                    width: 45vw;
+
+                    position: relative;
+                    top: -40vh;
+                    left: 0%;
+
+                    border-radius: 0 0 100px 0;
+                    z-index: 0;
+                }
+            }
+            .cont5
+            {
+                max-width: 50vw;
+                display: block;
+                justify-content: left;
+                justify-content: left;
+                padding: 160px 0 0 200px;
+
+                p 
+                {
+                    width: 70%;
+                    text-align: left;
+                    margin: 40px 0;
+                }
+
+                h3
+                {
+                    position: relative;
+                    left: 0vw;
+                    text-align: left;
+                }
+
+                a 
+                {
+                    margin: 0;
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        .linkDiv2, .linkDiv3
+        {
+            display: flex;
+            justify-content: space-around;
+
+            .cont4
+            {
+                max-width: 50vw;
+                margin-top: 100px;
+
+                img 
+                {
+                    position: relative;
+                    left: 20vw;
+                    z-index: 10;
+                }
+
+                .object
+                {
+                    background-color: $SoftBlue;
+                    height: 50vh;
+                    width: 45vw;
+
+                    position: relative;
+                    top: -50vh;
+                    left: 0%;
+
+                    border-radius: 0 0 100px 0;
+                    z-index: 0;
+                }
+            }
+
+            .cont5
+            {
+                max-width: 50vw;
+                display: block;
+                justify-content: left;
+                justify-content: left;
+                padding: 160px 0 0 200px;
+
+                position: relative;
+                left: 0vw;
+                top: 5vh;
+
+                p 
+                {
+                    width: 70%;
+                    text-align: left;
+                    margin: 40px 0;
+                }
+
+                h3
+                {
+                    position: relative;
+                    left: 0vw;
+                    text-align: left;
+                }
+
+                a 
+                {
+                    margin: 0;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    .cont6
+    {
+        grid-area: cont6;
+        height: 100vh;
+
+        text-align: center;
+
+        p 
+        {
+            width: 40%;
+            margin: 20px auto;
+            line-height: 1.5rem;
+        }
+
+        .cards
+        {
+            max-width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 50px;
+
+            .chromeCard, .firefoxCard, .operaCard
+            {
+                width: 20vw;
+                height: 50vh;
+                padding: 30px 0px;
+                box-shadow: 10px 10px 23px -13px rgba(29, 29, 29, 0.75);
+                overflow: hidden;
+                border-radius: 10px;
+
+                h5 
+                {
+                    font-weight: 400;
+                }
+
+                img 
+                {
+                    margin: 20px;
+                }
+
+                .dots
+                {
+                    margin: 20px 0;
+                }
+ 
+                p 
+                {
+                    font-size: small;
+                    width: 100%;
+                }
+            }
+
+            .firefoxCard
+            {
+                position: relative;
+                top: 30px;
+            }
+
+            .operaCard
+            {
+                position: relative;
+                top: 60px;
+            }
+        }
+    }
+
+    .FAQs
+    {
+        grid-area: faq;
+        height: 100vh;
+
+        .container 
+        {
+            margin: 0 auto;
+            width: 40%;
+            text-align: center;
+
+            .q1 
+            {
+                border-top: solid 1px $GrayishBlue;
+            }
+            .q1, .q2, .q3, .q4
+            {
+                border-bottom: solid 1px $GrayishBlue;
+                p 
+                {
+                    display: none;
+                }
+
+                h5 
+                {
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover 
+                    {
+                        color: $SoftRed;
+                    }
+                }
+            }
+
+            .q1Div, .q2Div , .q3Div , .q4Div 
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .imgDiv 
+                {
+                    margin-right: 20px;
+                    
+                    img 
+                    {
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            .faqP 
+            {
+                padding: 20px 0;
+            }
+
+            h5 
+            {
+                padding: 25px 0;
+                font-weight: 400;
+                text-align: left;
+            }
+
+            a 
+            {
+                position: relative;
+                top: 50px;
+            }
+            
+        }
+    }
+
+    footer 
+    {
+        grid-area: foot;
+        max-height: 70vh;
+        overflow-y: hidden;
+
+        .foot1 
+        {
+            background-color: $SoftBlue;
+            height: 50vh;
+            text-align: center;
+
+            p 
+            {
+                color: white;
+                font-size: 0.75rem;
+                padding-top: 30px;
+                text-transform: uppercase;
+            }
+
+            h3 
+            {
+                text-align: center;
+                padding: 30px;
+                color: white;
+                width: 40%;
+                margin: 0 auto;
+            }
+
+            input 
+            {
+                padding: 10px 20px 10px 20px;
+                margin-top: 20px;
+                background-color: white;
+                color: white;
+                border-radius: 5px;
+                border: solid 2px white;
+                transition: 0.3s ease-in-out;
+                outline: none;
+
+                &:hover, &:focus
+                {
+                    color: $SoftRed;
+                    border: solid 2px $SoftRed;
+                }
+            }
+        }
+
+        .nav 
+        {
+            background-color: $VeryDarkBlue;
+            height: 3vh;
+
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+
+            .section1 
+            {
+                margin-left: 30px;
+                ul
+                {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li 
+                    {
+                        margin: 25px;
+                        color: white;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        font-size: 0.75rem;
+                        padding-top: 10px;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover 
+                        {
+                            color: $SoftRed;
+                        }
+                    }
+                }
+            }
+
+            .section2
+            {
+                margin: 25px;
+                margin-right: 50px;
+                padding-top: 0px;
+
+                img 
+                {
+                    margin: 0 15px;
+                    //transition: 0.3s ease-in-out;
+
+                    &:hover 
+                    {
+                        filter: invert(64%) sepia(53%) saturate(5525%) hue-rotate(327deg) brightness(101%) contrast(96%);
+                    }
+                }
+            }
+        }
+
+        .attribution
+        {  
+            background-color: $VeryDarkBlue;
+            height: 8vh;
+            padding: 40px;
+            text-align: center;
+
+            p
+            {
+                border-top: solid 1px $SoftBlue;
+                margin-left: 45px;
+                padding-top: 15px;
+            }
+
+            a 
+            {
+                color: white;
+                transition: 0.3s ease-in-out;
+
+                &:hover 
+                {
+                    color: $SoftRed;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,109 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+// Colors
+
+// Primary
+
+$SoftBlue: hsl(231, 69%, 60%);
+$SoftRed: hsl(0, 94%, 66%);
+
+// Neutral
+
+$GrayishBlue: hsl(229, 8%, 60%);
+$VeryDarkBlue: hsl(229, 31%, 21%);
+
+p 
+{
+    color: $GrayishBlue;
+}
+
+h3, h1, h5 
+{
+    color: $VeryDarkBlue;
+}
+
+h1 
+{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h3 
+{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+p 
+{
+    line-height: 1.5rem;
+}
+
+.chromeBtn 
+{
+    padding: 10px 15px;
+    background-color: $SoftBlue;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    border: solid 2px $SoftBlue;
+    transition: 0.3s ease-in-out;
+    margin: 10px;
+
+    &:hover 
+    {
+        background-color: white;
+        color: $SoftBlue;
+    }
+}
+
+.firefoxBtn
+{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #f6f6f6;
+    border: solid 2px #f6f6f6;
+    color: $GrayishBlue;
+    box-shadow: 10px 10px 23px -13px rgba(29, 29, 29, 0.75);
+    transition: 0.3s ease-in-out;
+
+    &:hover 
+    {
+        border: solid 2px  $GrayishBlue;
+        box-shadow: none;
+    }
+}
+
+.login 
+{
+    padding: 10px 20px 10px 20px;
+    background-color: $SoftRed;
+    color: white;
+    border-radius: 5px;
+    border: solid 2px $SoftRed;
+    transition: 0.3s ease-in-out;
+
+    &:hover 
+    {
+        color: $SoftRed;
+        background-color: white;
+    }
+}

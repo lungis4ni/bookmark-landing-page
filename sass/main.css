@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: #9194a1;
+}
+
+h3, h1, h5 {
+  color: #252b46;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.chromeBtn {
+  padding: 10px 15px;
+  background-color: #5368df;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  border: solid 2px #5368df;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.chromeBtn:hover {
+  background-color: white;
+  color: #5368df;
+}
+
+.firefoxBtn {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #f6f6f6;
+  border: solid 2px #f6f6f6;
+  color: #9194a1;
+  -webkit-box-shadow: 10px 10px 23px -13px rgba(29, 29, 29, 0.75);
+          box-shadow: 10px 10px 23px -13px rgba(29, 29, 29, 0.75);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.firefoxBtn:hover {
+  border: solid 2px #9194a1;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login {
+  padding: 10px 20px 10px 20px;
+  background-color: #fa5757;
+  color: white;
+  border-radius: 5px;
+  border: solid 2px #fa5757;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.login:hover {
+  color: #fa5757;
+  background-color: white;
+}
+
+.everything {
+  display: -ms-grid;
+  display: grid;
+  max-width: 100vw;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  overflow-x: hidden;
+  -ms-grid-rows: 0.2fr 0.8fr 0.3fr 1fr 1fr 1fr 0.7fr;
+      grid-template-rows: 0.2fr 0.8fr 0.3fr 1fr 1fr 1fr 0.7fr;
+      grid-template-areas: "head head" "cont1 cont2" "cont3 cont3" "sec sec" "cont6 cont6" "faq faq" "foot foot";
+}
+
+.everything header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 70px 0px 60px;
+}
+
+.everything header .logo {
+  margin-top: 20px;
+}
+
+.everything header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.everything header nav ul li {
+  margin: 25px;
+  text-transform: uppercase;
+}
+
+.everything header nav ul li a {
+  font-size: 0.8rem;
+  color: #252b46;
+}
+
+.everything header nav ul li a:hover {
+  color: #fa5757;
+}
+
+.everything header nav ul li .login {
+  color: white;
+}
+
+.everything header nav ul li .login:hover {
+  color: #fa5757;
+}
+
+.everything .cont1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cont1;
+  max-height: 85vh;
+  padding: 100px 60px 0px 60px;
+}
+
+.everything .cont1 p {
+  margin: 10px;
+}
+
+.everything .cont1 .buttons {
+  position: relative;
+  top: 0;
+  margin-top: 60px;
+}
+
+.everything .cont2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cont2;
+  height: 85vh;
+}
+
+.everything .cont2 img {
+  position: relative;
+  z-index: 10;
+}
+
+.everything .cont2 .object {
+  background-color: #5368df;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  top: -40vh;
+  left: 30%;
+  border-radius: 0 0 0 200px;
+  z-index: 0;
+}
+
+.everything .cont3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cont3;
+  height: 30vh;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.everything .cont3 p {
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+  line-height: 1.5rem;
+}
+
+.everything section {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: sec;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.everything section .linksNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: solid 1px #b8b8b8;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.everything section .linksNav ul .active {
+  color: #252b46;
+  border-bottom: solid 5px #fa5757;
+}
+
+.everything section .linksNav ul li {
+  text-align: center;
+  margin: 0 50px;
+  padding: 0 15px;
+  padding-bottom: 20px;
+  color: #9194a1;
+  border-bottom: solid 5px transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.everything section .linksNav ul li:nth-child(1), .everything section .linksNav ul li:nth-child(3) {
+  margin: 0;
+}
+
+.everything section .linksNav ul li:hover {
+  color: #fa5757;
+}
+
+.everything section .linkDiv3, .everything section .linkDiv2 {
+  display: none !important;
+}
+
+.everything section .linkDiv1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.everything section .linkDiv1 .cont4 {
+  max-width: 50vw;
+  margin-top: 100px;
+}
+
+.everything section .linkDiv1 .cont4 img {
+  position: relative;
+  left: 200px;
+  z-index: 10;
+}
+
+.everything section .linkDiv1 .cont4 .object {
+  background-color: #5368df;
+  height: 50vh;
+  width: 45vw;
+  position: relative;
+  top: -40vh;
+  left: 0%;
+  border-radius: 0 0 100px 0;
+  z-index: 0;
+}
+
+.everything section .linkDiv1 .cont5 {
+  max-width: 50vw;
+  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  justify-content: left;
+  padding: 160px 0 0 200px;
+}
+
+.everything section .linkDiv1 .cont5 p {
+  width: 70%;
+  text-align: left;
+  margin: 40px 0;
+}
+
+.everything section .linkDiv1 .cont5 h3 {
+  position: relative;
+  left: 0vw;
+  text-align: left;
+}
+
+.everything section .linkDiv1 .cont5 a {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.everything section .linkDiv2, .everything section .linkDiv3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.everything section .linkDiv2 .cont4, .everything section .linkDiv3 .cont4 {
+  max-width: 50vw;
+  margin-top: 100px;
+}
+
+.everything section .linkDiv2 .cont4 img, .everything section .linkDiv3 .cont4 img {
+  position: relative;
+  left: 20vw;
+  z-index: 10;
+}
+
+.everything section .linkDiv2 .cont4 .object, .everything section .linkDiv3 .cont4 .object {
+  background-color: #5368df;
+  height: 50vh;
+  width: 45vw;
+  position: relative;
+  top: -50vh;
+  left: 0%;
+  border-radius: 0 0 100px 0;
+  z-index: 0;
+}
+
+.everything section .linkDiv2 .cont5, .everything section .linkDiv3 .cont5 {
+  max-width: 50vw;
+  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  justify-content: left;
+  padding: 160px 0 0 200px;
+  position: relative;
+  left: 0vw;
+  top: 5vh;
+}
+
+.everything section .linkDiv2 .cont5 p, .everything section .linkDiv3 .cont5 p {
+  width: 70%;
+  text-align: left;
+  margin: 40px 0;
+}
+
+.everything section .linkDiv2 .cont5 h3, .everything section .linkDiv3 .cont5 h3 {
+  position: relative;
+  left: 0vw;
+  text-align: left;
+}
+
+.everything section .linkDiv2 .cont5 a, .everything section .linkDiv3 .cont5 a {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.everything .cont6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cont6;
+  height: 100vh;
+  text-align: center;
+}
+
+.everything .cont6 p {
+  width: 40%;
+  margin: 20px auto;
+  line-height: 1.5rem;
+}
+
+.everything .cont6 .cards {
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px 50px;
+}
+
+.everything .cont6 .cards .chromeCard, .everything .cont6 .cards .firefoxCard, .everything .cont6 .cards .operaCard {
+  width: 20vw;
+  height: 50vh;
+  padding: 30px 0px;
+  -webkit-box-shadow: 10px 10px 23px -13px rgba(29, 29, 29, 0.75);
+          box-shadow: 10px 10px 23px -13px rgba(29, 29, 29, 0.75);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.everything .cont6 .cards .chromeCard h5, .everything .cont6 .cards .firefoxCard h5, .everything .cont6 .cards .operaCard h5 {
+  font-weight: 400;
+}
+
+.everything .cont6 .cards .chromeCard img, .everything .cont6 .cards .firefoxCard img, .everything .cont6 .cards .operaCard img {
+  margin: 20px;
+}
+
+.everything .cont6 .cards .chromeCard .dots, .everything .cont6 .cards .firefoxCard .dots, .everything .cont6 .cards .operaCard .dots {
+  margin: 20px 0;
+}
+
+.everything .cont6 .cards .chromeCard p, .everything .cont6 .cards .firefoxCard p, .everything .cont6 .cards .operaCard p {
+  font-size: small;
+  width: 100%;
+}
+
+.everything .cont6 .cards .firefoxCard {
+  position: relative;
+  top: 30px;
+}
+
+.everything .cont6 .cards .operaCard {
+  position: relative;
+  top: 60px;
+}
+
+.everything .FAQs {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: faq;
+  height: 100vh;
+}
+
+.everything .FAQs .container {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+}
+
+.everything .FAQs .container .q1 {
+  border-top: solid 1px #9194a1;
+}
+
+.everything .FAQs .container .q1, .everything .FAQs .container .q2, .everything .FAQs .container .q3, .everything .FAQs .container .q4 {
+  border-bottom: solid 1px #9194a1;
+}
+
+.everything .FAQs .container .q1 p, .everything .FAQs .container .q2 p, .everything .FAQs .container .q3 p, .everything .FAQs .container .q4 p {
+  display: none;
+}
+
+.everything .FAQs .container .q1 h5, .everything .FAQs .container .q2 h5, .everything .FAQs .container .q3 h5, .everything .FAQs .container .q4 h5 {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.everything .FAQs .container .q1 h5:hover, .everything .FAQs .container .q2 h5:hover, .everything .FAQs .container .q3 h5:hover, .everything .FAQs .container .q4 h5:hover {
+  color: #fa5757;
+}
+
+.everything .FAQs .container .q1Div, .everything .FAQs .container .q2Div, .everything .FAQs .container .q3Div, .everything .FAQs .container .q4Div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.everything .FAQs .container .q1Div .imgDiv, .everything .FAQs .container .q2Div .imgDiv, .everything .FAQs .container .q3Div .imgDiv, .everything .FAQs .container .q4Div .imgDiv {
+  margin-right: 20px;
+}
+
+.everything .FAQs .container .q1Div .imgDiv img, .everything .FAQs .container .q2Div .imgDiv img, .everything .FAQs .container .q3Div .imgDiv img, .everything .FAQs .container .q4Div .imgDiv img {
+  cursor: pointer;
+}
+
+.everything .FAQs .container .faqP {
+  padding: 20px 0;
+}
+
+.everything .FAQs .container h5 {
+  padding: 25px 0;
+  font-weight: 400;
+  text-align: left;
+}
+
+.everything .FAQs .container a {
+  position: relative;
+  top: 50px;
+}
+
+.everything footer {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: foot;
+  max-height: 70vh;
+  overflow-y: hidden;
+}
+
+.everything footer .foot1 {
+  background-color: #5368df;
+  height: 50vh;
+  text-align: center;
+}
+
+.everything footer .foot1 p {
+  color: white;
+  font-size: 0.75rem;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.everything footer .foot1 h3 {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.everything footer .foot1 input {
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+  border: solid 2px white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+
+.everything footer .foot1 input:hover, .everything footer .foot1 input:focus {
+  color: #fa5757;
+  border: solid 2px #fa5757;
+}
+
+.everything footer .nav {
+  background-color: #252b46;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.everything footer .nav .section1 {
+  margin-left: 30px;
+}
+
+.everything footer .nav .section1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.everything footer .nav .section1 ul li {
+  margin: 25px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding-top: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.everything footer .nav .section1 ul li:hover {
+  color: #fa5757;
+}
+
+.everything footer .nav .section2 {
+  margin: 25px;
+  margin-right: 50px;
+  padding-top: 0px;
+}
+
+.everything footer .nav .section2 img {
+  margin: 0 15px;
+}
+
+.everything footer .nav .section2 img:hover {
+  -webkit-filter: invert(64%) sepia(53%) saturate(5525%) hue-rotate(327deg) brightness(101%) contrast(96%);
+          filter: invert(64%) sepia(53%) saturate(5525%) hue-rotate(327deg) brightness(101%) contrast(96%);
+}
+
+.everything footer .attribution {
+  background-color: #252b46;
+  height: 8vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.everything footer .attribution p {
+  border-top: solid 1px #5368df;
+  margin-left: 45px;
+  padding-top: 15px;
+}
+
+.everything footer .attribution a {
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.everything footer .attribution a:hover {
+  color: #fa5757;
+}
+/*# sourceMappingURL=main.css.map */
